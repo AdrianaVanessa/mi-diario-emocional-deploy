@@ -44,6 +44,9 @@ CSRF_TRUSTED_ORIGINS = [
     "https://my-emotional-diary-app-n6nlc.ondigitalocean.app", # Tu Back en DigitalOcean
 ]
 
+# Dile a Django que confíe en el proxy de DigitalOcean
+USE_X_FORWARDED_HOST = True
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 # Application definition
 
 INSTALLED_APPS = [
