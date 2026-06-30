@@ -40,9 +40,10 @@ EMAIL_LOGO_URL = config("EMAIL_LOGO_URL")  # URL pública de tu logo
 WEBSITE_URL = config("WEBSITE_URL")
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://midiarioemocional-production.up.railway.app",
-    "https://*.railway.app",  # Permite cualquier subdominio de Railway
+    "https://mi-diario-emocional-deploy.vercel.app", # Tu Front en Vercel
+    "https://my-emotional-diary-app-n6nlc.ondigitalocean.app", # Tu Back en DigitalOcean
 ]
+
 # Application definition
 
 INSTALLED_APPS = [
