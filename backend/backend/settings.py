@@ -40,13 +40,9 @@ EMAIL_LOGO_URL = config("EMAIL_LOGO_URL")  # URL pública de tu logo
 WEBSITE_URL = config("WEBSITE_URL")
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://mi-diario-emocional-deploy.vercel.app", # Tu Front en Vercel
-    "https://my-emotional-diary-app-n6nlc.ondigitalocean.app", # Tu Back en DigitalOcean
+    "https://midiarioemocional-production.up.railway.app",
+    "https://*.herokuapp.com",  # Permite cualquier subdominio de Heroku
 ]
-
-# Dile a Django que confíe en el proxy de DigitalOcean
-USE_X_FORWARDED_HOST = True
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 # Application definition
 
 INSTALLED_APPS = [
@@ -163,31 +159,21 @@ STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
 # --- ACTUALIZADO: Configuración de Archivos de Medios (MEDIA) ---
 
-# 1. Variables de DigitalOcean Spaces (leídas desde Railway via decouple)
-DO_SPACES_ACCESS_KEY = config("DO_SPACES_ACCESS_KEY")
-DO_SPACES_SECRET_KEY = config("DO_SPACES_SECRET_KEY")
-DO_SPACES_BUCKET_NAME = config("DO_SPACES_BUCKET_NAME")
-DO_SPACES_REGION = config("DO_SPACES_REGION")
-DO_SPACES_ENDPOINT = f"https://{DO_SPACES_REGION}.digitaloceanspaces.com"
-DO_SPACES_CUSTOM_DOMAIN = f"{DO_SPACES_BUCKET_NAME}.{DO_SPACES_REGION}.digitaloceanspaces.com"
+# 1. Credenciales de Cloudinary
+CLOUDINARY_STORAGE = {
+    "CLOUD_NAME": config("CLOUDINARY_CLOUD_NAME"),
+    "API_KEY": config("CLOUDINARY_API_KEY"),
+    "API_SECRET": config("CLOUDINARY_API_SECRET"),
+}
 
 # 2. Configuración de STORAGES (Django 4.2+)
 STORAGES = {
-    # --- MODIFICADO ---
-    "default": {  # Este es el 'default' para MEDIA (fotos de perfil)
-        "BACKEND": "storages.backends.s3boto3.S3Boto3Storage",
-        "OPTIONS": {
-            "access_key": DO_SPACES_ACCESS_KEY,
-            "secret_key": DO_SPACES_SECRET_KEY,
-            "bucket_name": DO_SPACES_BUCKET_NAME,
-            "endpoint_url": DO_SPACES_ENDPOINT,
-            "default_acl": "public-read",  # Para que las fotos se vean
-            "location": "media",  # Los archivos se guardarán en la carpeta /media/
-            "custom_domain": DO_SPACES_CUSTOM_DOMAIN,
-        },
+    "default": {
+        # Este es el 'default' para MEDIA (fotos de perfil, pdfs). Ahora apunta a Cloudinary.
+        "BACKEND": "cloudinary_storage.storage.MediaCloudinaryStorage",
     },
-    # ------------------
-    "staticfiles": {  # Este se queda igual, para WhiteNoise (CSS/JS del Admin)
+    "staticfiles": {
+        # Este se queda igual, para WhiteNoise (CSS/JS del panel de Admin)
         "BACKEND": "whitenoise.storage.CompressedStaticFilesStorage",
     },
 }
@@ -198,7 +184,7 @@ STATICFILES_DIRS = [
 
 # 3. URLs de Media
 # MEDIA_URL ahora apunta a nuestra carpeta 'media' en la nube
-MEDIA_URL = f"https://{DO_SPACES_CUSTOM_DOMAIN}/media/"
+MEDIA_URL = "/media/"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
@@ -249,9 +235,6 @@ CORS_ALLOW_METHODS = [
 ]
 
 AUTH_USER_MODEL = "users.User"
-
-# Configuración de Archivos de Medios
-MEDIA_URL = f"https://{DO_SPACES_CUSTOM_DOMAIN}/media/"
 
 
 # LOGGING = {
