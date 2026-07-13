@@ -25,7 +25,10 @@ COPY requirements.txt .
 # 4. Instala el resto de dependencias (ahora mucho más rápido)
 RUN pip install --no-cache-dir -r requirements.txt
 
-# 5. Copia código de tu app
+# 5. Copia código de tu app (¡ESTA ES LA LÍNEA QUE FALTABA!)
+COPY . .
+
+# 6. Recolectar estáticos
 RUN DJANGO_SECRET_KEY="dummy_build_key_no_importa" \
     DB_NAME="dummy" \
     DB_USER="dummy" \
