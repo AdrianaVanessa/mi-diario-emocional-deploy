@@ -40,8 +40,8 @@ EMAIL_LOGO_URL = config("EMAIL_LOGO_URL")  # URL pública de tu logo
 WEBSITE_URL = config("WEBSITE_URL")
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://midiarioemocional-production.up.railway.app",
-    "https://*.herokuapp.com",  # Permite cualquier subdominio de Heroku
+    "https://mi-diario-emocional-deploy.vercel.app",
+    "https://mi-diario-emocional-api-f76026558651.herokuapp.com",
 ]
 # Application definition
 
