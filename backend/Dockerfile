@@ -26,8 +26,6 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # 5. Copia código de tu app
-COPY . .
-
 RUN DJANGO_SECRET_KEY="dummy_build_key_no_importa" \
     DB_NAME="dummy" \
     DB_USER="dummy" \
@@ -37,12 +35,11 @@ RUN DJANGO_SECRET_KEY="dummy_build_key_no_importa" \
     EMAIL_HOST_USER="dummy@example.com" \
     HF_SPACE_URL="http://dummy.url" \
     ANYMAIL_BREVO_API_KEY="dummy-key-for-build" \
-    DO_SPACES_ACCESS_KEY="dummy-key" \
-    DO_SPACES_SECRET_KEY="dummy-secret" \
-    DO_SPACES_BUCKET_NAME="dummy-bucket" \
-    DO_SPACES_REGION="nyc3" \
-    EMAIL_LOGO_URL="dummy-logo-url" \
-    WEBSITE_URL="http://dummy-website-url" \
+    CLOUDINARY_CLOUD_NAME="dummy-cloud" \
+    CLOUDINARY_API_KEY="dummy-key" \
+    CLOUDINARY_API_SECRET="dummy-secret" \
+    EMAIL_LOGO_URL="http://dummy-logo.com" \
+    WEBSITE_URL="http://dummy-website.com" \
     python manage.py collectstatic --noinput
 
 # --- ETAPA 2: LA IMAGEN FINAL (SLIM) ---
