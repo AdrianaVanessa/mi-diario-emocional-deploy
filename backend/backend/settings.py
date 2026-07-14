@@ -52,8 +52,8 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     # cloudinary_storage debe ir justo ARRIBA de staticfiles
-    "cloudinary_storage",
     "django.contrib.staticfiles",
+    "cloudinary_storage",
     "cloudinary",
     # Soporte de postgreSQL
     "django.contrib.postgres",
@@ -157,7 +157,6 @@ USE_TZ = True
 STATIC_URL = "/static/"
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
-
 # --- ACTUALIZADO: Configuración de Archivos de Medios (MEDIA) ---
 
 # 1. Credenciales de Cloudinary
@@ -174,8 +173,7 @@ STORAGES = {
         "BACKEND": "cloudinary_storage.storage.MediaCloudinaryStorage",
     },
     "staticfiles": {
-        # ¡CAMBIO AQUÍ! Usamos WhiteNoise para servir el CSS en Heroku
-        "BACKEND": "whitenoise.storage.CompressedStaticFilesStorage",
+        "BACKEND": "django.contrib.staticfiles.storage.StaticFilesStorage",
     },
 }
 
@@ -236,7 +234,6 @@ CORS_ALLOW_METHODS = [
 ]
 
 AUTH_USER_MODEL = "users.User"
-
 
 # LOGGING = {
 #     "version": 1,
