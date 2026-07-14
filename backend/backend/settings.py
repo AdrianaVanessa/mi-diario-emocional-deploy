@@ -175,7 +175,7 @@ STORAGES = {
     },
     "staticfiles": {
         # ¡CAMBIO AQUÍ! Usamos WhiteNoise para servir el CSS en Heroku
-        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+        "BACKEND": "whitenoise.storage.CompressedStaticFilesStorage",
     },
 }
 
