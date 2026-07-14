@@ -29,7 +29,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # 6. Recolectar estáticos
-RUN DJANGO_SECRET_KEY="dummy_build_key_no_importa" \
+RUN mkdir -p /app/staticfiles /app/static && \
+    DJANGO_SECRET_KEY="dummy_build_key_no_importa" \
     DB_NAME="dummy" \
     DB_USER="dummy" \
     DB_PASSWORD="dummy" \
@@ -43,7 +44,7 @@ RUN DJANGO_SECRET_KEY="dummy_build_key_no_importa" \
     CLOUDINARY_API_SECRET="dummy-secret" \
     EMAIL_LOGO_URL="http://dummy-logo.com" \
     WEBSITE_URL="http://dummy-website.com" \
-    python manage.py collectstatic --noinput
+    python manage.py collectstatic --noinput --clear
 
 # --- ETAPA 2: LA IMAGEN FINAL (SLIM) ---
 FROM python:3.11-slim

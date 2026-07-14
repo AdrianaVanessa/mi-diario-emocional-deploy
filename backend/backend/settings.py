@@ -170,12 +170,12 @@ CLOUDINARY_STORAGE = {
 # 2. Configuración de STORAGES (Django 4.2+)
 STORAGES = {
     "default": {
-        # Este es el 'default' para MEDIA (fotos de perfil, pdfs). Ahora apunta a Cloudinary.
+        # Este es el 'default' para MEDIA. Apunta a Cloudinary.
         "BACKEND": "cloudinary_storage.storage.MediaCloudinaryStorage",
     },
     "staticfiles": {
-        # Este se queda igual, para WhiteNoise (CSS/JS del panel de Admin)
-        "BACKEND": "whitenoise.storage.CompressedStaticFilesStorage",
+        # ¡CAMBIO AQUÍ! Usamos WhiteNoise para servir el CSS en Heroku
+        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
     },
 }
 
