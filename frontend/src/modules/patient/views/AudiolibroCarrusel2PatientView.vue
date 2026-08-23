@@ -2,54 +2,44 @@
     <div class="dark:bg-gray-800 transition-colors flex h-screen bg-gray-100">
         <main class="flex-1 flex flex-col overflow-y-auto p-8 lg:p-1">
             <StreakAndTitle
-              title="Audiolibro completo"
+              title="Audiolibro"
               :streak-count="streakCount"
             />
             <div class="bg-white rounded-2xl shadow-lg p-6 md:p-10 lg:p-16 max-w-4xl mx-auto my-6">
                 <div class="text-center mb-8">
                     <h1 class="text-3xl md:text-4xl font-bold text-gray-800 leading-tight mb-2">
-                        Practicando el Poder del Ahora
+                        El poder de escuchar
                     </h1>
-                    <p class="text-lg text-gray-600 font-semibold">Por Eckhart Tolle</p>
-                    <p class="text-sm text-gray-500">Edición en español, 2014</p>
+                    <p class="text-lg text-gray-600 font-semibold">Por Ismael Cala</p>
+                    <p class="text-sm text-gray-500">Edición abreviada en español, 2014</p>
                 </div>
 
                 <p class="text-xl md:text-2xl font-light text-gray-700 italic text-center leading-relaxed mb-8">
-                    “Una invitación a dirigir nuestra atención al presente y observar con mayor conciencia nuestros pensamientos y emociones.”
+                    “Una reflexión sobre la importancia de aprender a escuchar a los demás y a nosotros mismos para mejorar nuestra comunicación y nuestras relaciones.”
                 </p>
 
 
                 <div class="text-gray-700 leading-relaxed text-base md:text-lg">
                     <p class="mb-6 text-justify">
-                      En <strong>Practicando el Poder del Ahora</strong>, Eckhart Tolle presenta una serie de reflexiones y ejercicios orientados a desarrollar una mayor conciencia del momento presente. El autor propone observar nuestros pensamientos y emociones sin identificarnos completamente con ellos, con el objetivo de comprender mejor la manera en que reaccionamos ante distintas situaciones.
+                      En <strong>El Poder de Escuchar</strong>, Ismael Cala aborda la importancia de desarrollar una escucha más consciente como parte de nuestra manera de comunicarnos y relacionarnos con otras personas. A partir de reflexiones y experiencias personales, el autor explica cómo prestar verdadera atención puede ayudarnos a comprender mejor las ideas, necesidades y emociones de quienes nos rodean.
                       </p>
 
                     <p class="mb-6 text-justify">
-                       A lo largo del audiolibro se aborda la importancia de prestar atención a lo que ocurre en el presente, en lugar de permanecer constantemente preocupados por el pasado o anticipando situaciones futuras. Esta perspectiva busca favorecer una relación más consciente con nuestros pensamientos y con las experiencias cotidianas.
+                      A lo largo del audiolibro se plantea que escuchar implica mucho más que permanecer en silencio mientras otra persona habla. Requiere atención, apertura y disposición para comprender diferentes perspectivas. Desarrollar esta capacidad puede favorecer una comunicación más clara y contribuir a fortalecer nuestras relaciones personales y profesionales.
                     </p>
 
                     <p class="mb-6 text-justify">
-                      El contenido también invita a reconocer patrones mentales que pueden generar preocupación o malestar y a practicar una actitud de observación y aceptación. De esta manera, la atención plena se presenta como una herramienta para conocernos mejor y desarrollar una mayor conciencia sobre nuestras propias emociones.
+                      El autor también invita a dirigir la escucha hacia nosotros mismos. Reconocer nuestras emociones, necesidades y pensamientos puede ayudarnos a comprender mejor nuestras propias reacciones y tomar decisiones de una manera más consciente.
                     </p>
 
                     <p class="mb-6 text-justify">
-                      Este material puede complementar prácticas como el mindfulness y la introspección, al proponer ejercicios y reflexiones dirigidos a fortalecer la atención y la conexión con el momento presente.
+                      Este material puede complementar el desarrollo de habilidades relacionadas con la empatía, la comunicación y el autoconocimiento, al proponer la escucha como una herramienta para mejorar tanto nuestra relación con otras personas como la forma en que comprendemos nuestras propias experiencias.
                     </p>
 
                 <div class="text-gray-700 leading-relaxed text-base md:text-lg">
                     <div class="mb-8">
                         <div class="relative overflow-hidden w-full" style="padding-top: 5%">
-                            <iframe
-  data-testid="embed-iframe"
-  style="border-radius:12px"
-  src="https://open.spotify.com/embed/album/3NszfjJLr0BcXMx3S42ReZ?utm_source=generator&si=6a5dc3d72a334fc0"
-  width="100%"
-  height="352"
-  frameBorder="0"
-  allowfullscreen
-  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-  loading="lazy">
-</iframe>
+                          <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/06KkA6HwQFZvfhFy0H8SvU?utm_source=generator&si=292923ce33224c14" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                         </div>
                     </div>
 
@@ -60,14 +50,14 @@
                     <div class="mt-8 pt-4 border-t border-gray-200 text-gray-600 text-sm">
                         <h3 class="text-base font-bold text-gray-800 mb-2">Sobre el autor</h3>
                         <p class="mb-2">
-                            <strong>Eckhart Tolle</strong>es un escritor y conferenciante conocido por sus obras relacionadas con la atención plena, la conciencia y el desarrollo personal. Entre sus libros más conocidos se encuentran El poder del ahora y Una nueva Tierra.
+                            <strong>Ismael Cala</strong> es periodista, escritor y conferenciante. A lo largo de su trayectoria profesional ha desarrollado contenidos relacionados con la comunicación, el liderazgo, el crecimiento personal y las relaciones interpersonales. En <strong>El Poder de Escuchar</strong>, comparte reflexiones sobre el papel que tiene la escucha en la manera en que nos comunicamos y nos relacionamos con los demás.
                         </p>
                         <p class="text-xs text-gray-500">
-                            <strong>Fuente: </strong> Resumen elaborado a partir del audiolibro <strong>Practicando el Poder del Ahora</strong>, de Eckhart Tolle, disponible en Spotify. <br></br>
+                            <strong>Fuente: </strong> Resumen elaborado a partir del audiolibro <strong>El Poder de Escuchar (abreviado)</strong>, de Ismael Cala, publicado por <strong>Fonolibro</strong> y disponible en Spotify. <br></br>
 
                         </p>
                         <p class="text-xs text-gray-500">
-                          <strong>Contenido original:</strong> <a href="https://open.spotify.com/embed/album/3NszfjJLr0BcXMx3S42ReZ" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">https://open.spotify.com/embed/album/3NszfjJLr0BcXMx3S42ReZ</a>
+                          <strong>Contenido original:</strong> <a href="https://open.spotify.com/album/06KkA6HwQFZvfhFy0H8SvU" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">https://open.spotify.com/embed/album/06KkA6HwQFZvfhFy0H8SvU</a>
                         </p>
                     </div>
                 </div>

@@ -45,15 +45,15 @@
         <router-link to="/audiobook-carrusel-2-patient" class="block w-full">
             <div class="bg-white dark:bg-gray-900 transition-colors rounded-lg shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow">
                 <img
-                    src="https://images.pexels.com/photos/32298479/pexels-photo-32298479.jpeg"
+                    src="https://images.pexels.com/photos/6271511/pexels-photo-6271511.jpeg"
                     alt="Audiolibro 1"
                     class="w-full h-40 object-cover"
                 />
                 <div class="p-4 h-40">
                     <h4 class="dark:text-gray-200 font-semibold text-gray-800 mb-2">
-                        Audiolibro - Practicando el Poder del Ahora.
+                        Audiolibro - El poder de escuchar.
                     </h4>
-                    <p class="text-sm text-gray-600 dark:text-gray-400"> Por Eckhart Tolle, cómo vivir en el presente y calmar la mente.</p>
+                    <p class="text-sm text-gray-600 dark:text-gray-400"> Por Ismael Cala, escucha consciente para fortalecer relaciones, empatía y autoconocimiento.</p>
                 </div>
             </div>
         </router-link>
