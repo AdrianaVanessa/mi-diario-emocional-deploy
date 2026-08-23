@@ -217,9 +217,14 @@ SIMPLE_JWT = {
     "SIGNING_KEY": config("DJANGO_SECRET_KEY"),
 }
 
-EMAIL_BACKEND = config("EMAIL_BACKEND")
+EMAIL_BACKEND = config("EMAIL_BACKEND", default="anymail.backends.brevo.EmailBackend")
+
+ANYMAIL = {
+    "BREVO_API_KEY": config("ANYMAIL_BREVO_API_KEY"),
+}
+
 DEFAULT_FROM_EMAIL = config("EMAIL_HOST_USER")
-ANYMAIL_BREVO_API_KEY = config("ANYMAIL_BREVO_API_KEY")
+SERVER_EMAIL = DEFAULT_FROM_EMAIL
 
 CORS_ALLOWED_ORIGINS = config("CORS_ALLOWED_ORIGINS", default="http://localhost:5173").split(",")
 CORS_ALLOW_CREDENTIALS = True
