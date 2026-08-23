@@ -45,15 +45,15 @@
         <router-link to="/audiobook-carrusel-2-patient" class="block w-full">
             <div class="bg-white dark:bg-gray-900 transition-colors rounded-lg shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow">
                 <img
-                    src="https://imgs.search.brave.com/SOM_j95Q5ZNePD01qAUPPlYFHCK_U5iuEGWW1X614Rc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9odHRw/Mi5tbHN0YXRpYy5j/b20vRF9RX05QXzJY/Xzk4OTgyMi1NTFU3/NzMzMTYwNDgyNF8w/NzIwMjQtVi53ZWJw"
+                    src="https://images.pexels.com/photos/32298479/pexels-photo-32298479.jpeg"
                     alt="Audiolibro 1"
                     class="w-full h-40 object-cover"
                 />
                 <div class="p-4 h-40">
                     <h4 class="dark:text-gray-200 font-semibold text-gray-800 mb-2">
-                        Audiolibro - los Cuatro Acuerdos, Por Don Miguel Ruiz.
+                        Audiolibro -  Practicando el Poder del Ahora, Por Eckhart Tolle.
                     </h4>
-                    <p class="text-sm text-gray-600 dark:text-gray-400">Es un ensayo sobre la libertad personal y cómo liberarnos de creencias limitantes.</p>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">Guía práctica de atención plena para vivir en el presente y calmar la mente.</p>
                 </div>
             </div>
         </router-link>

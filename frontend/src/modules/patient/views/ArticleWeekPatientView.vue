@@ -3,7 +3,7 @@
 
         <main class="flex-1 flex flex-col overflow-y-auto p-8 lg:p-1">
             <StreakAndTitle
-              title="Artículo de la semana"
+              title="Artículo destacado"
               :streak-count="streakCount"
             />
 
@@ -13,7 +13,7 @@
                         ¿Cómo superar el trauma de una ruptura? Una guía práctica
                     </h1>
                     <p class="text-lg text-gray-600 font-semibold">Autora original: Silvia Congost</p>
-                    <p class="text-sm text-gray-500">26 MAR 2025 - 23:00 CST</p>
+                    <p class="text-sm text-gray-500">26 MAR 2025</p>
                 </div>
 
                 <div class="text-gray-700 leading-relaxed text-base md:text-lg">
@@ -21,16 +21,13 @@
                         Una ruptura amorosa puede ser una experiencia especialmente dolorosa porque no implica únicamente separarse de una persona. También supone dejar atrás rutinas, proyectos compartidos y expectativas sobre el futuro. Este cambio puede generar miedo, resistencia y una sensación de pérdida difícil de aceptar.
                     </p>
                     <br>
-                    <br>
                     <p class="mb-6 text-justify">
                         Además, el final de una relación puede afectar la autoestima. Cuando alguien deja de formar parte de nuestra vida, es común cuestionar nuestro propio valor o sentir que no fuimos suficientes. Por ello, parte del proceso de recuperación consiste en reconstruir la relación con nosotros mismos, aprender a tratarnos con mayor comprensión y reconocer que nuestro valor no depende de que otra persona permanezca a nuestro lado.
                     </p>
                     <br>
-                    <br>
                     <p class="mb-6 text-justify">
                     Superar una ruptura requiere tiempo y cada persona vive este proceso de manera diferente. Durante el duelo pueden aparecer emociones como tristeza, enojo, frustración o incluso dificultad para aceptar lo ocurrido. Comprender que estas reacciones forman parte del proceso puede ayudar a transitarlas sin compararnos con la forma en que otras personas enfrentan experiencias similares.
                       </p>
-                    <br>
                     <br>
                     <p class="mb-6 text-justify">
                       Aprender a soltar también significa aceptar aquello que ya no podemos controlar y dirigir nuestra atención hacia lo que continúa formando parte de nuestra vida. Valorar nuestros vínculos, aprendizajes y recursos personales puede ayudarnos a recuperar poco a poco la estabilidad y continuar construyendo nuevas etapas.

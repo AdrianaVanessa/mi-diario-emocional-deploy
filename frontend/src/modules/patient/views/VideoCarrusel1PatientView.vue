@@ -19,11 +19,9 @@
                       En este video, Marian Rojas-Estapé aborda la importancia de comprender cómo nuestros pensamientos, emociones y hábitos influyen en nuestro bienestar. Explica que es posible desarrollar una visión más optimista de la vida prestando atención a nuestra voz interior y aprendiendo a relacionarnos de forma más consciente con lo que ocurre a nuestro alrededor.
                     </p>
                     <br>
-                    <br>
                     <p class="mb-6 text-justify">
                       La especialista también reflexiona sobre la necesidad de conectar con el presente en un contexto marcado por las pantallas, la sobreestimulación y las distracciones constantes. Prácticas como la introspección y la contemplación pueden ayudarnos a identificar lo que sentimos, comprender mejor nuestros patrones y valorar las pequeñas experiencias positivas de la vida cotidiana.
                     </p>
-                    <br>
                     <br>
                     <p class="mb-6 text-justify">
                       Otro de los temas centrales es la relación entre la mente y el cuerpo. Comprender nuestras emociones y las reacciones de nuestro organismo puede ayudarnos a gestionar mejor determinadas situaciones, sin asumir que todas las dificultades emocionales representan necesariamente una enfermedad.

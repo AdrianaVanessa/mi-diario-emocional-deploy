@@ -19,18 +19,15 @@
                         Un ejercicio guiado de respiración consciente orientado a favorecer la relajación y dirigir la atención al momento presente.
                     </p>
                     <br>
-                    <br>
 
                     <p class="mb-6 text-justify">
                         En este episodio, Glenda Yoga guía un ejercicio de respiración consciente que puede realizarse durante unos minutos como una práctica de relajación. El objetivo es prestar atención al ritmo de la respiración y hacer una pausa frente a las preocupaciones o estímulos del día a día.
                     </p>
                     <br>
-                    <br>
 
                     <p class="mb-6 text-justify">
                         La respiración consciente es una práctica utilizada en ejercicios de meditación y mindfulness para dirigir la atención hacia el presente. Este episodio propone utilizarla como una herramienta sencilla para favorecer una sensación de calma y reconocer las sensaciones del cuerpo.
                     </p>
-                    <br>
                     <br>
 
                     <p class="mb-6 text-justify">

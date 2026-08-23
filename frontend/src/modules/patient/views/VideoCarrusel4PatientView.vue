@@ -19,16 +19,13 @@
                         El mindfulness, también conocido como atención plena, es una práctica que busca dirigir conscientemente la atención hacia el momento presente. Consiste en observar pensamientos, emociones y sensaciones sin juzgarlos ni tratar de evitarlos, lo que puede favorecer una mayor comprensión de nuestras propias reacciones emocionales.
                     </p>
                     <br>
-                    <br>
                     <p class="mb-6 text-justify">
                       En este episodio, Helena Echeverría explica algunos conceptos básicos relacionados con las emociones, como su función y los diferentes elementos que intervienen cuando experimentamos una respuesta emocional. También aborda la importancia de reconocer lo que sentimos antes de intentar regularlo.
                     </p>
                     <br>
-                    <br>
                     <p class="mb-6 text-justify">
                       A lo largo del contenido se presenta el mindfulness como una herramienta que puede ayudarnos a relacionarnos de una manera más consciente con nuestras emociones. Mediante un ejercicio práctico de atención plena, se propone observar las sensaciones y pensamientos que aparecen en el momento presente sin reaccionar automáticamente ante ellos.
                     </p>
-                    <br>
                     <br>
                     <p class="mb-6 text-justify">
                       El objetivo es desarrollar una mayor conciencia emocional y aprender estrategias que puedan contribuir a gestionar de una forma más consciente situaciones cotidianas de estrés o malestar.

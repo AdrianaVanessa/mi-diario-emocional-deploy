@@ -18,14 +18,12 @@
                     “Una reflexión sobre la importancia de prestar atención a nuestro bienestar emocional y desarrollar hábitos que nos ayuden a cuidar nuestra salud mental.”
                 </p>
                 <br>
-                    <br>
 
                 <div class="text-gray-700 leading-relaxed text-base md:text-lg">
                     <p class="mb-6 text-justify">
                     En esta conferencia, Fernando Lemarroy reflexiona sobre la importancia de reconocer la salud mental como una parte fundamental de nuestro bienestar. A partir de su perspectiva y experiencias personales, aborda la necesidad de prestar atención a lo que sentimos y comenzar a tomar decisiones orientadas al cuidado personal.
                   </p>
                   <br>
-                    <br>
                     <p class="mb-6 text-justify">
                       La charla invita a cuestionar la poca educación que tradicionalmente recibimos sobre temas relacionados con las emociones y el bienestar psicológico. También plantea la importancia de conocernos mejor, identificar aquello que puede afectar nuestro estado emocional y desarrollar una mayor conciencia sobre la manera en que afrontamos las situaciones cotidianas.
 </p>
