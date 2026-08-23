@@ -40,14 +40,16 @@
                     <div class="mb-8">
                         <div class="relative overflow-hidden w-full" style="padding-top: 5%">
                             <iframe
-                            src="https://open.spotify.com/embed/album/3NszfjJLr0BcXMx3S42ReZ"
-                            width="100%"
-                            height="352"
-                            frameborder="0"
-                            allowfullscreen
-                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                            loading="lazy">
-                          </iframe>
+  data-testid="embed-iframe"
+  style="border-radius:12px"
+  src="https://open.spotify.com/embed/album/3NszfjJLr0BcXMx3S42ReZ?utm_source=generator&si=6a5dc3d72a334fc0"
+  width="100%"
+  height="352"
+  frameBorder="0"
+  allowfullscreen
+  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+  loading="lazy">
+</iframe>
                         </div>
                     </div>
 

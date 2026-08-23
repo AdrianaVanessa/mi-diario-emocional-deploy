@@ -37,7 +37,7 @@
                             <span class="font-bold">Silvia Congost</span> es psicóloga, conferenciante y escritora especializada en autoestima, dependencia emocional y relaciones de pareja. Su trabajo aborda especialmente los procesos de ruptura y la construcción de relaciones emocionalmente saludables.
                         </p>
                         <p class="text-xs text-gray-500">
-                            <span class="font-bold">Fuente:</span> Resumen elaborado a partir del artículo de Silvia Congost, <span class="font-bold">¿Cómo superar el trauma de una ruptura? Una guía práctica</span>, publicado en <span class="font-bold">El País</span>en marzo de 2025. <br></br>
+                            <span class="font-bold">Fuente:</span> Resumen elaborado a partir del artículo de Silvia Congost, <span class="font-bold">¿Cómo superar el trauma de una ruptura? Una guía práctica</span>, publicado en <span class="font-bold">El País</span> en marzo de 2025. <br></br>
                             <span class="font-bold">Consultar artículo original: </span><br></br>
                             <a href="https://elpais.com/eps/psicologia-y-bienestar/2025-03-27/como-superar-el-trauma-de-una-ruptura-una-guia-practica.html" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">https://elpais.com/eps/psicologia-y-bienestar/2025-03-27/como-superar-el-trauma-de-una-ruptura-una-guia-practica.html</a>
                         </p>
