@@ -135,53 +135,41 @@
               <p v-if="paternalLastNameError" class="text-sm text-red-500 mt-2">{{ paternalLastNameError }}</p>
             </div>
           </div>
-         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-  <!-- Campo: Segundo apellido -->
-  <div class="min-w-0">
-    <label class="block text-gray-700 dark:text-gray-300 font-semibold mb-2">
-      Segundo apellido
-    </label>
-    <div class="relative">
-      <input
-        v-model="form.maternalLastName"
-        type="text"
-        placeholder="Ingresa tu segundo apellido"
-        @blur="validateMaternalLastName"
-        class="w-full px-4 py-3 rounded-lg border bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-2"
-        :class="{
-          'border-red-500 dark:border-red-500 focus:ring-red-500': maternalLastNameError,
-          'border-gray-300 dark:border-gray-600 focus:ring-[#70BFE9]': !maternalLastNameError
-        }"
-      />
-    </div>
-    <p v-if="maternalLastNameError" class="text-sm text-red-500 mt-2">
-      {{ maternalLastNameError }}
-    </p>
-  </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="relative">
+              <label class="block text-gray-700 dark:text-gray-300 font-semibold mb-2"
+                >Segundo apellido</label
+              >
+              <input
+                v-model="form.maternalLastName"
+                type="text"
+                placeholder="Ingresa tu segundo apellido"
+                @blur="validateMaternalLastName" class="w-full px-4 py-3 rounded-lg border bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-2"
+              :class="{
+                'border-red-500 dark:border-red-500 focus:ring-red-500': maternalLastNameError,
+                'border-gray-300 dark:border-gray-600 focus:ring-[#70BFE9]': !maternalLastNameError
+              }"
 
-  <!-- Campo: Fecha de nacimiento -->
-  <div class="min-w-0">
-    <label class="block text-gray-700 dark:text-gray-300 font-semibold mb-2">
-      Fecha de nacimiento *
-    </label>
-    <div class="relative">
-      <input
-        v-model="form.dateOfBirth"
-        type="date"
-        @change="validateDateOfBirth"
-        class="w-full px-4 py-3 rounded-lg border bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-2"
-        :class="{
-          'border-red-500 dark:border-red-500 focus:ring-red-500': dateOfBirthError,
-          'border-gray-300 dark:border-gray-600 focus:ring-[#70BFE9]': !dateOfBirthError
-        }"
-        required
-      />
-    </div>
-    <p v-if="dateOfBirthError" class="text-sm text-red-500 mt-2">
-      {{ dateOfBirthError }}
-    </p>
-  </div>
-</div>
+              />
+              <p v-if="maternalLastNameError" class="text-sm text-red-500 mt-2">{{ maternalLastNameError }}</p>
+            </div>
+            <div class="relative">
+              <label class="block text-gray-700 dark:text-gray-300 font-semibold mb-2"
+                >Fecha de nacimiento *</label
+              >
+              <input
+                v-model="form.dateOfBirth"
+                type="date"
+                @change="validateDateOfBirth" class="w-full px-4 py-3 rounded-lg border bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-2"
+              :class="{
+                'border-red-500 dark:border-red-500 focus:ring-red-500': dateOfBirthError,
+                'border-gray-300 dark:border-gray-600 focus:ring-[#70BFE9]': !dateOfBirthError
+              }"
+              required
+              />
+              <p v-if="dateOfBirthError" class="text-sm text-red-500 mt-2">{{ dateOfBirthError }}</p>
+            </div>
+          </div>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div class="relative">
               <label class="block text-gray-700 dark:text-gray-300 font-semibold mb-2"

@@ -127,53 +127,53 @@
         </div>
 
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-  <!-- Campo: Fecha de nacimiento -->
-  <div class="min-w-0">
-    <label class="block mb-1 text-sm font-medium text-gray-700 dark:text-gray-300 ml-1">
-      Fecha de nacimiento
-    </label>
-    <div class="relative">
-      <input
-        v-model="form.dateOfBirth"
-        @change="validateDateOfBirth"
-        type="date"
-        class="w-full pl-12 pr-4 py-3 rounded-lg border bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none focus:ring-2"
-        :class="{
-          'border-red-500 dark:border-red-500 focus:ring-red-500': dateOfBirthError,
-          'border-gray-300 dark:border-gray-600 focus:ring-[#70BFE9]': !dateOfBirthError
-        }"
-        required
-      />
-      <IconCalendar
-        class="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 dark:text-gray-500 pointer-events-none"
-      />
-    </div>
-    <p v-if="dateOfBirthError" class="text-sm text-red-500 mt-2">{{ dateOfBirthError }}</p>
-  </div>
+            <div>
+            <label class="block mb-1 text-sm font-medium text-gray-700 dark:text-gray-300 ml-1">
+              Fecha de nacimiento
+            </label>
+            <div class="relative">
+              <input
+                v-model="form.dateOfBirth"
+                @change="validateDateOfBirth" type="date"
+                class="w-full pl-12 pr-4 py-3 rounded-lg border bg-gray-50 ..."
+                :class="{
+                  'border-red-500 dark:border-red-500 focus:ring-red-500': dateOfBirthError,
+                  'border-gray-300 dark:border-gray-600 focus:ring-[#70BFE9]': !dateOfBirthError
+                }"
+                required
+                :style="{ 'padding-left': '3rem' }"
+              />
+              <IconCalendar
+                class="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 dark:text-gray-500"
+              />
+            </div>
+              <p v-if="dateOfBirthError" class="text-sm text-red-500 mt-2">{{ dateOfBirthError }}</p>
 
-  <!-- Campo: Género -->
-  <div class="min-w-0">
-    <label class="block mb-1 text-sm font-medium text-gray-700 dark:text-gray-300 ml-1">
-      Género
-    </label>
-    <div class="relative">
-      <select
-        v-model="form.gender"
-        class="w-full pl-12 pr-8 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-[#70BFE9] appearance-none"
-        required
-      >
-        <option value="" disabled>Selecciona el género...</option>
-        <option value="male">Masculino</option>
-        <option value="female">Femenino</option>
-        <option value="non_binary">No binario</option>
-        <option value="other">Otro</option>
-      </select>
-      <IconGenderBigender
-        class="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 dark:text-gray-500 pointer-events-none"
-      />
-    </div>
-  </div>
-</div>
+            </div>
+
+            <div>
+              <label class="block mb-1 text-sm font-medium text-gray-700 dark:text-gray-300 ml-1">
+                Género
+              </label>
+            <div class="relative">
+              <select
+                v-model="form.gender"
+                class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#70BFE9]"
+                required
+                :style="{ 'padding-left': '3rem' }"
+              >
+                <option value="" disabled>Selecciona el género...</option>
+                <option value="male">Masculino</option>
+                <option value="female">Femenino</option>
+                <option value="non_binary">No binario</option>
+                <option value="other">Otro</option>
+              </select>
+              <IconGenderBigender
+                class="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 dark:text-gray-500"
+              />
+            </div>
+            </div>
+          </div>
           </div>
           <p class="text-sm text-gray-500 dark:text-gray-400 mt-2">* Campos obligatorios</p>
           <button
