@@ -39,7 +39,7 @@
                 <div class="text-gray-700 leading-relaxed text-base md:text-lg">
                     <div class="mb-8">
                         <div class="relative overflow-hidden w-full" style="padding-top: 5%">
-                          <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/06KkA6HwQFZvfhFy0H8SvU?utm_source=generator&si=292923ce33224c14" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                          <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/06KkA6HwQFZvfhFy0H8SvU?utm_source=generator&si=292923ce33224c14" width="100%" height="352" frameBorder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                         </div>
                     </div>
 
