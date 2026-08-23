@@ -51,9 +51,9 @@
                 />
                 <div class="p-4 h-40">
                     <h4 class="dark:text-gray-200 font-semibold text-gray-800 mb-2">
-                        Audiolibro -  Practicando el Poder del Ahora, Por Eckhart Tolle.
+                        Audiolibro - Practicando el Poder del Ahora.
                     </h4>
-                    <p class="text-sm text-gray-600 dark:text-gray-400">Guía práctica de atención plena para vivir en el presente y calmar la mente.</p>
+                    <p class="text-sm text-gray-600 dark:text-gray-400"> Por Eckhart Tolle, cómo vivir en el presente y calmar la mente.</p>
                 </div>
             </div>
         </router-link>
