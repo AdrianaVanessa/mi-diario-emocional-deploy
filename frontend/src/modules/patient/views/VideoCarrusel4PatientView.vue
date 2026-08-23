@@ -14,21 +14,26 @@
                     <p class="text-sm text-gray-500">12 may 2022</p>
                 </div>
 
-                <p class="text-xl md:text-2xl font-light text-gray-700 italic text-center leading-relaxed mb-8">
-                    ““Hay que ser conscientes de que lo que nos provoca malestar o ansiedad no son los eventos, sino como vinculamos las emociones a éstos - Jonathan García-Allen. ”
-                </p>
-
                 <div class="text-gray-700 leading-relaxed text-base md:text-lg">
                     <p class="mb-6 text-justify">
-                        El mindfulness es una práctica popular, pero… ¿sabes qué es mindfulness y para qué sirve? En esencia, se trata de una herramienta para alcanzar tu bienestar en medio del estrés diario. <br></br>
-                        Conocida también como atención plena, la meditación mindfulness nos invita a concentrarnos en el momento presente a fin de mejorar nuestra conexión con nosotros mismos y con el entorno. Además de sus beneficios personales, ha demostrado ser un recurso efectivo en el ámbito educativo, especialmente para desarrollar habilidades cognitivas. <br></br>
-                        Mindfulness en español es atención plena o conciencia plena. Esta traducción de mindfulness evidencia la idea de prestar atención de manera intencionada, sin distracciones y con aceptación. <br></br>
-                        El significado de mindfulness se refiere a un estado mental en el que nos conectamos profundamente con el aquí y el ahora, dejando de lado juicios y preocupaciones. La conciencia plena se basa en observar pensamientos, sensaciones y emociones, sin aferrarnos a ellos.
+                        El mindfulness, también conocido como atención plena, es una práctica que busca dirigir conscientemente la atención hacia el momento presente. Consiste en observar pensamientos, emociones y sensaciones sin juzgarlos ni tratar de evitarlos, lo que puede favorecer una mayor comprensión de nuestras propias reacciones emocionales.
+                    </p>
+                    <br>
+                    <br>
+                    <p class="mb-6 text-justify">
+                      En este episodio, Helena Echeverría explica algunos conceptos básicos relacionados con las emociones, como su función y los diferentes elementos que intervienen cuando experimentamos una respuesta emocional. También aborda la importancia de reconocer lo que sentimos antes de intentar regularlo.
+                    </p>
+                    <br>
+                    <br>
+                    <p class="mb-6 text-justify">
+                      A lo largo del contenido se presenta el mindfulness como una herramienta que puede ayudarnos a relacionarnos de una manera más consciente con nuestras emociones. Mediante un ejercicio práctico de atención plena, se propone observar las sensaciones y pensamientos que aparecen en el momento presente sin reaccionar automáticamente ante ellos.
+                    </p>
+                    <br>
+                    <br>
+                    <p class="mb-6 text-justify">
+                      El objetivo es desarrollar una mayor conciencia emocional y aprender estrategias que puedan contribuir a gestionar de una forma más consciente situaciones cotidianas de estrés o malestar.
                     </p>
 
-                    <p class="mb-6 text-justify">
-                        Aprende sobre emociones en este episodio. Descubre las emociones básicas que existen, cuáles son los componentes de una emoción y cómo gestionar emociones a través de un ejercicio práctico de mindfulness. ¡Adelante!
-                    </p>
 
                 <div class="text-gray-700 leading-relaxed text-base md:text-lg">
                     <div class="mb-8">
@@ -51,11 +56,11 @@
                     <div class="mt-8 pt-4 border-t border-gray-200 text-gray-600 text-sm">
                         <h3 class="text-base font-bold text-gray-800 mb-2">Sobre la especialista</h3>
                         <p class="mb-2">
-                            **Helena Echeverría** Helena Echeverría es psicóloga, fundadora de PsicoGuías y autora de varios libros. S especializada en ansiedad, estrés y mindfulness, y es una de las voces más reconocidas en España sobre psicología positiva y desarrollo personal.
+                            <span class="font-bold">Helena Echeverría</span> es psicóloga y fundadora de PsicoGuías. Su trabajo de divulgación aborda temas relacionados con la psicología, las emociones, la ansiedad, el estrés y el mindfulness.
                         </p>
                         <p class="text-xs text-gray-500">
-                            **Fuente:** Adaptado de: PsicoGuías | Podcast Psicología. <br></br>
-                            Ver más en: <a href="https://www.youtube.com/watch?v=RdAhXhP26Uo" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">https://www.youtube.com/watch?v=RdAhXhP26Uo</a>
+                            <span class="font-bold">Fuente:</span> Resumen elaborado a partir del contenido publicado por PsicoGuías | Podcast Psicología.<br></br>
+                            <span class="font-bold">Contenido original:</span> <a href="https://www.youtube.com/watch?v=RdAhXhP26Uo" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">https://www.youtube.com/watch?v=RdAhXhP26Uo</a>
                         </p>
                     </div>
                 </div>

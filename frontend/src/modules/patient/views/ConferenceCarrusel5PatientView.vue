@@ -15,17 +15,24 @@
                 </div>
 
                 <p class="text-xl md:text-2xl font-light text-gray-700 italic text-center leading-relaxed mb-8">
-                    “La salud mental no es un destino, sino un proceso - Noah Shpancer.”
+                    “Una reflexión sobre la importancia de prestar atención a nuestro bienestar emocional y desarrollar hábitos que nos ayuden a cuidar nuestra salud mental.”
                 </p>
+                <br>
+                    <br>
 
                 <div class="text-gray-700 leading-relaxed text-base md:text-lg">
                     <p class="mb-6 text-justify">
-                        Fernando nos enseña a cuidar nuestra salud mental y el empezar a ver por nuestro propio bienestar. <br></br>
-                        Fernando es una persona que siempre ha sido muy inquieta desde pequeño, siempre ha sentido una especial curiosidad por hacer las cosas de otra manera, y buscar como trabajar con un equipo de personas con dotes comunicativas puede ser lo más efectivo del mundo.
-                    </p>
+                    En esta conferencia, Fernando Lemarroy reflexiona sobre la importancia de reconocer la salud mental como una parte fundamental de nuestro bienestar. A partir de su perspectiva y experiencias personales, aborda la necesidad de prestar atención a lo que sentimos y comenzar a tomar decisiones orientadas al cuidado personal.
+                  </p>
+                  <br>
+                    <br>
                     <p class="mb-6 text-justify">
-                        Actualmente es Co-fundador y Jefe de Oficina Operativa de The Startop, empresa dedicada a migrar negocios al mundo digital a través de estrategias de marketing con el objetivo de generar tráfico y aumentar las ventas. Fernando is a person who has always been very restless since he was little, he has always felt a special curiosity to do things differently, and looking for how to work with a team of people with communication skills can be the most effective thing in the world.
+                      La charla invita a cuestionar la poca educación que tradicionalmente recibimos sobre temas relacionados con las emociones y el bienestar psicológico. También plantea la importancia de conocernos mejor, identificar aquello que puede afectar nuestro estado emocional y desarrollar una mayor conciencia sobre la manera en que afrontamos las situaciones cotidianas.
+</p>
+<p class="mb-6 text-justify">
+El contenido busca promover una conversación más abierta sobre la salud mental y recordar que cuidar nuestro bienestar emocional es un proceso continuo que puede formar parte de nuestra vida diaria.
                     </p>
+
 
                 <div class="text-gray-700 leading-relaxed text-base md:text-lg">
                     <div class="mb-8">
@@ -48,11 +55,11 @@
                     <div class="mt-8 pt-4 border-t border-gray-200 text-gray-600 text-sm">
                         <h3 class="text-base font-bold text-gray-800 mb-2">Sobre él</h3>
                         <p class="mb-2">
-                            **Fernando Lemarroy**
+                            <strong>Fernando Lemarroy</strong> participa como ponente en esta conferencia TEDx, en la que comparte reflexiones y experiencias relacionadas con el bienestar y la salud mental.
                         </p>
                         <p class="text-xs text-gray-500">
-                            **Fuente:** Adaptado de: #AprendemosJuntosBBVA2030. <br></br>
-                            Ver más en: <a href="https://www.youtube.com/watch?v=S_0l-EqwknU" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">https://www.youtube.com/watch?v=S_0l-EqwknU</a>
+                            <strong>Fuente:</strong> Resumen elaborado a partir de la conferencia <strong>“Salud mental, la clase que nadie nos dio”</strong>, publicada por <strong>TEDxTecdeMty</strong> en YouTube.<br></br>
+                            <strong>Contenido original:</strong> <a href="https://www.youtube.com/watch?v=_9agX3gY1jU" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">https://www.youtube.com/watch?v=_9agX3gY1jU</a>
                         </p>
                     </div>
                 </div>

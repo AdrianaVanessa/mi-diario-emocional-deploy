@@ -9,7 +9,7 @@
 
         <div class="mb-8 relative bg-gradient-to-r overflow-hidden h-96 flex items-center justify-center">
           <img
-            src="https://img.europapress.es/fotoweb/fotonoticia_20220430132209_690.jpg"
+            src="https://images.unsplash.com/photo-1658279366796-e0c28623cd27?q=80&w=1151&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="Artículo destacado"
             class="w-3/5 h-full object-cover rounded-2xl opacity-100"
           />
@@ -19,7 +19,7 @@
               <button
                 class="bg-[#7DBFF8] bg-opacity-50 p-3 rounded-lg hover:bg-[#3457B2] transition shadow-lg transition-colors text-white"
               >
-                <h1 class="font-bold">Ver: Artículo de la semana</h1>
+                <h1 class="font-bold">Ver: Artículo destacado</h1>
                   ¿Cómo superar el trauma de una ruptura? Una guía práctica. <b>Por: Silvia Congost</b>
               </button>
             </router-link>

@@ -8,47 +8,51 @@
             <div class="bg-white rounded-2xl shadow-lg p-6 md:p-10 lg:p-16 max-w-4xl mx-auto my-6">
                 <div class="text-center mb-8">
                     <h1 class="text-3xl md:text-4xl font-bold text-gray-800 leading-tight mb-2">
-                        Los Cuatro Acuerdos.
+                        Practicando el Poder del Ahora
                     </h1>
-                    <p class="text-lg text-gray-600 font-semibold">Por Don Miguel Ruiz</p>
-                    <p class="text-sm text-gray-500">26 de abril de 2022</p>
+                    <p class="text-lg text-gray-600 font-semibold">Por Eckhart Tolle</p>
+                    <p class="text-sm text-gray-500">Edición en español, 2014</p>
                 </div>
 
                 <p class="text-xl md:text-2xl font-light text-gray-700 italic text-center leading-relaxed mb-8">
-                    “Una guía práctica para la libertad personal basada en la sabiduría tolteca.”
+                    “Una invitación a dirigir nuestra atención al presente y observar con mayor conciencia nuestros pensamientos y emociones.”
                 </p>
 
 
                 <div class="text-gray-700 leading-relaxed text-base md:text-lg">
                     <p class="mb-6 text-justify">
-                        En <strong>Los Cuatro Acuerdos</strong>, Don Miguel Ruiz revela la fuente de las creencias limitantes que nos roban la alegría y crean un sufrimiento innecesario. Basado en la antigua sabiduría tolteca, este libro ofrece un poderoso código de conducta que puede transformar rápidamente nuestras vidas en una nueva experiencia de libertad, verdadera felicidad y amor.
+                      En <strong>Practicando el Poder del Ahora</strong>, Eckhart Tolle presenta una serie de reflexiones y ejercicios orientados a desarrollar una mayor conciencia del momento presente. El autor propone observar nuestros pensamientos y emociones sin identificarnos completamente con ellos, con el objetivo de comprender mejor la manera en que reaccionamos ante distintas situaciones.
                       </p>
+                      <br>
+                    <br>
 
                     <p class="mb-6 text-justify">
-                        El autor nos guía para romper los "acuerdos" autodestructivos que hemos hecho con nosotros mismos, impuestos por el miedo y la "domesticación" social. Estos acuerdos son la causa de nuestro sufrimiento y nos impiden ver quiénes somos realmente.
-                        <br></br>
-                        Al adoptar y vivir según los Cuatro Acuerdos, podemos liberarnos del auto-juicio, la culpa y la vergüenza, y comenzar a vivir una vida basada en el amor propio y la aceptación.
+                       A lo largo del audiolibro se aborda la importancia de prestar atención a lo que ocurre en el presente, en lugar de permanecer constantemente preocupados por el pasado o anticipando situaciones futuras. Esta perspectiva busca favorecer una relación más consciente con nuestros pensamientos y con las experiencias cotidianas.
                     </p>
+                    <br>
+                    <br>
 
                     <p class="mb-6 text-justify">
-                        Los Cuatro Acuerdos son:
-                        <br></br>• <strong>Sé impecable con tus palabras:</strong> Habla con integridad y evita usar la palabra contra ti mismo (chismes, autocrítica).
-                        <br></br>• <strong>No te tomes nada personalmente:</strong> Lo que otros dicen y hacen es una proyección de su propia realidad, no una verdad sobre ti.
-                        <br></br>• <strong>No hagas suposiciones:</strong> Encuentra la valentía para preguntar y comunicar con claridad, evitando malentendidos y drama.
-                        <br></br>• <strong>Haz siempre lo máximo que puedas:</strong> Tu máximo esfuerzo variará (si estás enfermo o sano), pero si siempre haces lo mejor, evitarás el auto-juicio.
-                    </p>
+                      El contenido también invita a reconocer patrones mentales que pueden generar preocupación o malestar y a practicar una actitud de observación y aceptación. De esta manera, la atención plena se presenta como una herramienta para conocernos mejor y desarrollar una mayor conciencia sobre nuestras propias emociones.
+                    </p>
+                    <br>
+                    <br>
+
+                    <p class="mb-6 text-justify">
+                      Este material puede complementar prácticas como el mindfulness y la introspección, al proponer ejercicios y reflexiones dirigidos a fortalecer la atención y la conexión con el momento presente.
+                    </p>
 
                 <div class="text-gray-700 leading-relaxed text-base md:text-lg">
                     <div class="mb-8">
                         <div class="relative overflow-hidden w-full" style="padding-top: 5%">
                             <iframe
-                                style="border-radius:12px"
-                                src="https://open.spotify.com/embed/episode/2jOKKFrRDPXbpZ6WJnlL3N?utm_source=generator"
-                                width="100%"
-                                height="352"
-                                frameBorder="0"
-                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                                loading="lazy">
+                              src="https://open.spotify.com/embed/album/3NszfjJLr0BcXMx3S42ReZ"
+                              width="100%"
+                              height="352"
+                              frameborder="0"
+                              allowfullscreen=""
+                              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                              loading="lazy">
                             </iframe>
                         </div>
                     </div>
@@ -60,10 +64,14 @@
                     <div class="mt-8 pt-4 border-t border-gray-200 text-gray-600 text-sm">
                         <h3 class="text-base font-bold text-gray-800 mb-2">Sobre el autor</h3>
                         <p class="mb-2">
-                            **Don Miguel Ruiz** es un autor mexicano, chamán (nagual) y maestro de la tradición tolteca. Nació en una familia de curanderos y creció en el México rural. Aunque estudió medicina y se convirtió en cirujano, una experiencia cercana a la muerte lo llevó a redescubrir la sabiduría ancestral de su familia, dedicándose a compartir las enseñanzas toltecas con el mundo.
+                            <strong>Eckhart Tolle</strong>es un escritor y conferenciante conocido por sus obras relacionadas con la atención plena, la conciencia y el desarrollo personal. Entre sus libros más conocidos se encuentran El poder del ahora y Una nueva Tierra.
                         </p>
                         <p class="text-xs text-gray-500">
-                            **Fuente:** Adaptado de: #Spotify. <br></br>
+                            <strong>Fuente: </strong> Resumen elaborado a partir del audiolibro <strong>Practicando el Poder del Ahora</strong>, de Eckhart Tolle, disponible en Spotify. <br></br>
+
+                        </p>
+                        <p class="text-xs text-gray-500">
+                          <strong>Contenido original:</strong> <a href="https://open.spotify.com/embed/album/3NszfjJLr0BcXMx3S42ReZ" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">https://open.spotify.com/embed/album/3NszfjJLr0BcXMx3S42ReZ</a>
                         </p>
                     </div>
                 </div>
