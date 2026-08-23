@@ -20,15 +20,12 @@
                     <p class="mb-6 text-justify">
                         Una ruptura amorosa puede ser una experiencia especialmente dolorosa porque no implica únicamente separarse de una persona. También supone dejar atrás rutinas, proyectos compartidos y expectativas sobre el futuro. Este cambio puede generar miedo, resistencia y una sensación de pérdida difícil de aceptar.
                     </p>
-                    <br>
                     <p class="mb-6 text-justify">
                         Además, el final de una relación puede afectar la autoestima. Cuando alguien deja de formar parte de nuestra vida, es común cuestionar nuestro propio valor o sentir que no fuimos suficientes. Por ello, parte del proceso de recuperación consiste en reconstruir la relación con nosotros mismos, aprender a tratarnos con mayor comprensión y reconocer que nuestro valor no depende de que otra persona permanezca a nuestro lado.
                     </p>
-                    <br>
                     <p class="mb-6 text-justify">
                     Superar una ruptura requiere tiempo y cada persona vive este proceso de manera diferente. Durante el duelo pueden aparecer emociones como tristeza, enojo, frustración o incluso dificultad para aceptar lo ocurrido. Comprender que estas reacciones forman parte del proceso puede ayudar a transitarlas sin compararnos con la forma en que otras personas enfrentan experiencias similares.
                       </p>
-                    <br>
                     <p class="mb-6 text-justify">
                       Aprender a soltar también significa aceptar aquello que ya no podemos controlar y dirigir nuestra atención hacia lo que continúa formando parte de nuestra vida. Valorar nuestros vínculos, aprendizajes y recursos personales puede ayudarnos a recuperar poco a poco la estabilidad y continuar construyendo nuevas etapas.
                     </p>

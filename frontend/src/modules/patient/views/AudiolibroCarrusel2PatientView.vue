@@ -23,17 +23,14 @@
                     <p class="mb-6 text-justify">
                       En <strong>Practicando el Poder del Ahora</strong>, Eckhart Tolle presenta una serie de reflexiones y ejercicios orientados a desarrollar una mayor conciencia del momento presente. El autor propone observar nuestros pensamientos y emociones sin identificarnos completamente con ellos, con el objetivo de comprender mejor la manera en que reaccionamos ante distintas situaciones.
                       </p>
-                    <br>
 
                     <p class="mb-6 text-justify">
                        A lo largo del audiolibro se aborda la importancia de prestar atención a lo que ocurre en el presente, en lugar de permanecer constantemente preocupados por el pasado o anticipando situaciones futuras. Esta perspectiva busca favorecer una relación más consciente con nuestros pensamientos y con las experiencias cotidianas.
                     </p>
-                    <br>
 
                     <p class="mb-6 text-justify">
                       El contenido también invita a reconocer patrones mentales que pueden generar preocupación o malestar y a practicar una actitud de observación y aceptación. De esta manera, la atención plena se presenta como una herramienta para conocernos mejor y desarrollar una mayor conciencia sobre nuestras propias emociones.
                     </p>
-                    <br>
 
                     <p class="mb-6 text-justify">
                       Este material puede complementar prácticas como el mindfulness y la introspección, al proponer ejercicios y reflexiones dirigidos a fortalecer la atención y la conexión con el momento presente.
