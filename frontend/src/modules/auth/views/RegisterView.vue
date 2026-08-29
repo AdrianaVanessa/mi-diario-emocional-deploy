@@ -1,16 +1,12 @@
 <template>
-  <div
-    class="min-h-screen bg-gradient-to-br from-slate-50 to-[#70BFE9]/20 dark:from-gray-900 dark:to-gray-800 transition-colors"
-  >
+  <div class="min-h-screen bg-gradient-to-br from-slate-50 to-[#70BFE9]/20 dark:from-gray-900 dark:to-gray-800 transition-colors">
     <div class="grid grid-cols-1 lg:grid-cols-2 min-h-screen">
       <div class="flex items-center justify-center">
         <WomanHeart />
       </div>
 
       <div class="flex items-center justify-center p-6">
-        <div
-          class="w-full max-w-md rounded-2xl bg-white dark:bg-gray-800 p-8 shadow-lg border border-gray-200 dark:border-gray-700"
-        >
+        <div class="w-full max-w-md rounded-2xl bg-white dark:bg-gray-800 p-8 shadow-lg border border-gray-200 dark:border-gray-700">
           <h1 class="mb-8 text-3xl font-bold text-center text-[#70BFE9]">Regístrate</h1>
 
           <div class="flex flex-col gap-6 text-center">
@@ -19,7 +15,7 @@
                 ¿Eres un profesional de la salud mental?
               </p>
               <router-link
-                to="/privacy-policy?flow=register&type=professional"
+                to="/terms-and-conditions?flow=register&type=professional"
                 class="inline-block w-full bg-[#70BFE9] hover:bg-[#3457B2] text-white font-semibold py-3 px-6 rounded-lg transition-colors"
               >
                 ¡Haz click aquí!
@@ -31,7 +27,7 @@
                 ¿Eres un paciente?
               </p>
               <router-link
-                to="/privacy-policy?flow=register&type=patient"
+                to="/terms-and-conditions?flow=register&type=patient"
                 class="inline-block w-full bg-[#70BFE9] hover:bg-[#3457B2] text-white font-semibold py-3 px-6 rounded-lg transition-colors"
               >
                 ¡Haz click aquí!
@@ -62,6 +58,4 @@
 
 <script setup lang="ts">
 import WomanHeart from '../components/WomanHeart.vue'
-
-// No se necesita lógica JS en este componente, ya que los links de Vue Router manejan la navegación.
 </script>
