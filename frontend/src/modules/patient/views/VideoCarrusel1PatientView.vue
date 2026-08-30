@@ -14,17 +14,15 @@
                     <p class="text-sm text-gray-500">22 jul 2024</p>
                 </div>
 
-                <p class="text-xl md:text-2xl font-light text-gray-700 italic text-center leading-relaxed mb-8">
-                    “¿Se puede educar el optimismo? “Sí, se puede aprender a ser optimista”. Y depende de nuestra voz interior, de cómo vemos la realidad y de si estamos dispuestos a conectar con el presente y profundizar en la trascendencia de la vida más allá de las pantallas, la superficialidad y las adicciones. Para la psiquiatra y experta en neurociencia Marian Rojas-Estapé técnicas como la contemplación y la instrospección nos permitirán ver lo que hay dentro de nosotros mismos y fuera con ojos nuevos, y a conectar con las pequeñas alegrías del día a día. En este vídeo, la reconocida psiquiatra y experta en neurociencia explica cómo la comprensión del funcionamiento de nuestro cerebro, nuestras emociones y nuestro organismo nos ayuda a vivir una vida más real: “Nuestra voz interior influye en el sistema inmune y cuando comprendes por lo que pasa tu mente, te sientes aliviado; porque si no eres esclavo de síntomas físicos, psicológicos y vas perdido por la vida.”
-                </p>
-
                 <div class="text-gray-700 leading-relaxed text-base md:text-lg">
                     <p class="mb-6 text-justify">
-                        Cuando Rojas-Estapé comenzó a estudiar Medicina sentía que siempre faltaba el plano emocional en el abordaje de las enfermedades, siendo reconocida por su enfoque humanista en la conexión de la salud física y mental con la somatización emocional. Marian es una de las psiquiatras más influyentes de la actualidad por su capacidad para explicar conceptos complejos de manera accesible, ayudando a muchas personas a conocerse y a gestionar de manera más consciente sus emociones. “Entender que la mente, el cuerpo y el alma están profundamente unidos es fundamental a la hora de abordar una terapia pero no patologicemos todo lo que nos sucede. No todo tiene que ser paliado con medicación y no todo tiene que ser tratado por un profesional. Hay procesos que cada cual tiene que vivir a medida que nos van sucediendo”, reflexiona.
+                      En este video, Marian Rojas-Estapé aborda la importancia de comprender cómo nuestros pensamientos, emociones y hábitos influyen en nuestro bienestar. Explica que es posible desarrollar una visión más optimista de la vida prestando atención a nuestra voz interior y aprendiendo a relacionarnos de forma más consciente con lo que ocurre a nuestro alrededor.
                     </p>
-
                     <p class="mb-6 text-justify">
-                        Marian Rojas-Estapé es psiquiatra licenciada en Medicina y Cirugía por la Universidad de Navarra, y compagina su trabajo en el Instituto Español de Investigaciones Psiquiátricas con su labor como colaboradora en universidades, proyectos de cooperación, divulgadora y autora de obras superventas como ‘Cómo hacer que te pasen cosas buenas’, ‘Encuentra tu persona vitamina’, y ‘Recupera tu mente, reconquista tu vida’. Su último trabajo, en el que pone de relieve la urgencia de profundizar en nuestras vidas para saber elegir, identificar patrones y alejarnos del mundanal ruido para proteger nuestra salud física y psicológica.
+                      La especialista también reflexiona sobre la necesidad de conectar con el presente en un contexto marcado por las pantallas, la sobreestimulación y las distracciones constantes. Prácticas como la introspección y la contemplación pueden ayudarnos a identificar lo que sentimos, comprender mejor nuestros patrones y valorar las pequeñas experiencias positivas de la vida cotidiana.
+                    </p>
+                    <p class="mb-6 text-justify">
+                      Otro de los temas centrales es la relación entre la mente y el cuerpo. Comprender nuestras emociones y las reacciones de nuestro organismo puede ayudarnos a gestionar mejor determinadas situaciones, sin asumir que todas las dificultades emocionales representan necesariamente una enfermedad.
                     </p>
 
                 <div class="text-gray-700 leading-relaxed text-base md:text-lg">
@@ -48,11 +46,11 @@
                     <div class="mt-8 pt-4 border-t border-gray-200 text-gray-600 text-sm">
                         <h3 class="text-base font-bold text-gray-800 mb-2">Sobre la especialista</h3>
                         <p class="mb-2">
-                            **Marian Rojas-Estapé** Marian Rojas Estapé es una médica, especialista en psiquiatría y escritora española. Su padre es el psiquiatra y escritor Enrique Rojas y su madre la notaria y profesora universitaria Isabel Estapé. Es nieta del economista Fabián Estapé. Comenzó la Licenciatura de Medicina en la Universidad Complutense de Madrid, concluyéndola en la Universidad de Navarra (2007). Concluida la licenciatura, se especializó en Psiquiatría.
+                            <span class="font-bold">Marian Rojas-Estapé</span> es médica especialista en psiquiatría y escritora española. Su trabajo de divulgación se centra en explicar de manera accesible la relación entre las emociones, el comportamiento y el bienestar psicológico. Es autora de libros como <span class="font-bold">Cómo hacer que te pasen cosas buenas</span>, <span class="font-bold">Encuentra tu persona vitamina</span> y <span class="font-bold">Recupera tu mente, reconquista tu vida</span>.
                         </p>
                         <p class="text-xs text-gray-500">
-                            **Fuente:** Adaptado de: #AprendemosJuntosBBVA2030. <br></br>
-                            Ver más en: <a href="https://www.youtube.com/watch?v=S_0l-EqwknU" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">https://www.youtube.com/watch?v=S_0l-EqwknU</a>
+                            <span class="font-bold">Fuente:</span> Resumen elaborado a partir del contenido publicado por <span class="font-bold">Aprendemos Juntos 2030 - BBVA</span> <br></br>
+                            <span class="font-bold">Contenido original:</span> <a href="https://www.youtube.com/watch?v=S_0l-EqwknU" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">https://www.youtube.com/watch?v=S_0l-EqwknU</a>
                         </p>
                     </div>
                 </div>

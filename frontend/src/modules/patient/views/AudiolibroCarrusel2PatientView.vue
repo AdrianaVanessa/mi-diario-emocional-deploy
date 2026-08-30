@@ -2,54 +2,44 @@
     <div class="dark:bg-gray-800 transition-colors flex h-screen bg-gray-100">
         <main class="flex-1 flex flex-col overflow-y-auto p-8 lg:p-1">
             <StreakAndTitle
-              title="Audiolibro completo"
+              title="Audiolibro"
               :streak-count="streakCount"
             />
             <div class="bg-white rounded-2xl shadow-lg p-6 md:p-10 lg:p-16 max-w-4xl mx-auto my-6">
                 <div class="text-center mb-8">
                     <h1 class="text-3xl md:text-4xl font-bold text-gray-800 leading-tight mb-2">
-                        Los Cuatro Acuerdos.
+                        El poder de escuchar
                     </h1>
-                    <p class="text-lg text-gray-600 font-semibold">Por Don Miguel Ruiz</p>
-                    <p class="text-sm text-gray-500">26 de abril de 2022</p>
+                    <p class="text-lg text-gray-600 font-semibold">Por Ismael Cala</p>
+                    <p class="text-sm text-gray-500">Edición abreviada en español, 2014</p>
                 </div>
 
                 <p class="text-xl md:text-2xl font-light text-gray-700 italic text-center leading-relaxed mb-8">
-                    “Una guía práctica para la libertad personal basada en la sabiduría tolteca.”
+                    “Una reflexión sobre la importancia de aprender a escuchar a los demás y a nosotros mismos para mejorar nuestra comunicación y nuestras relaciones.”
                 </p>
 
 
                 <div class="text-gray-700 leading-relaxed text-base md:text-lg">
                     <p class="mb-6 text-justify">
-                        En <strong>Los Cuatro Acuerdos</strong>, Don Miguel Ruiz revela la fuente de las creencias limitantes que nos roban la alegría y crean un sufrimiento innecesario. Basado en la antigua sabiduría tolteca, este libro ofrece un poderoso código de conducta que puede transformar rápidamente nuestras vidas en una nueva experiencia de libertad, verdadera felicidad y amor.
+                      En <strong>El Poder de Escuchar</strong>, Ismael Cala aborda la importancia de desarrollar una escucha más consciente como parte de nuestra manera de comunicarnos y relacionarnos con otras personas. A partir de reflexiones y experiencias personales, el autor explica cómo prestar verdadera atención puede ayudarnos a comprender mejor las ideas, necesidades y emociones de quienes nos rodean.
                       </p>
 
                     <p class="mb-6 text-justify">
-                        El autor nos guía para romper los "acuerdos" autodestructivos que hemos hecho con nosotros mismos, impuestos por el miedo y la "domesticación" social. Estos acuerdos son la causa de nuestro sufrimiento y nos impiden ver quiénes somos realmente.
-                        <br></br>
-                        Al adoptar y vivir según los Cuatro Acuerdos, podemos liberarnos del auto-juicio, la culpa y la vergüenza, y comenzar a vivir una vida basada en el amor propio y la aceptación.
+                      A lo largo del audiolibro se plantea que escuchar implica mucho más que permanecer en silencio mientras otra persona habla. Requiere atención, apertura y disposición para comprender diferentes perspectivas. Desarrollar esta capacidad puede favorecer una comunicación más clara y contribuir a fortalecer nuestras relaciones personales y profesionales.
                     </p>
 
                     <p class="mb-6 text-justify">
-                        Los Cuatro Acuerdos son:
-                        <br></br>• <strong>Sé impecable con tus palabras:</strong> Habla con integridad y evita usar la palabra contra ti mismo (chismes, autocrítica).
-                        <br></br>• <strong>No te tomes nada personalmente:</strong> Lo que otros dicen y hacen es una proyección de su propia realidad, no una verdad sobre ti.
-                        <br></br>• <strong>No hagas suposiciones:</strong> Encuentra la valentía para preguntar y comunicar con claridad, evitando malentendidos y drama.
-                        <br></br>• <strong>Haz siempre lo máximo que puedas:</strong> Tu máximo esfuerzo variará (si estás enfermo o sano), pero si siempre haces lo mejor, evitarás el auto-juicio.
-                    </p>
+                      El autor también invita a dirigir la escucha hacia nosotros mismos. Reconocer nuestras emociones, necesidades y pensamientos puede ayudarnos a comprender mejor nuestras propias reacciones y tomar decisiones de una manera más consciente.
+                    </p>
+
+                    <p class="mb-6 text-justify">
+                      Este material puede complementar el desarrollo de habilidades relacionadas con la empatía, la comunicación y el autoconocimiento, al proponer la escucha como una herramienta para mejorar tanto nuestra relación con otras personas como la forma en que comprendemos nuestras propias experiencias.
+                    </p>
 
                 <div class="text-gray-700 leading-relaxed text-base md:text-lg">
                     <div class="mb-8">
                         <div class="relative overflow-hidden w-full" style="padding-top: 5%">
-                            <iframe
-                                style="border-radius:12px"
-                                src="https://open.spotify.com/embed/episode/2jOKKFrRDPXbpZ6WJnlL3N?utm_source=generator"
-                                width="100%"
-                                height="352"
-                                frameBorder="0"
-                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                                loading="lazy">
-                            </iframe>
+                          <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/06KkA6HwQFZvfhFy0H8SvU?utm_source=generator&si=292923ce33224c14" width="100%" height="352" frameBorder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                         </div>
                     </div>
 
@@ -60,10 +50,14 @@
                     <div class="mt-8 pt-4 border-t border-gray-200 text-gray-600 text-sm">
                         <h3 class="text-base font-bold text-gray-800 mb-2">Sobre el autor</h3>
                         <p class="mb-2">
-                            **Don Miguel Ruiz** es un autor mexicano, chamán (nagual) y maestro de la tradición tolteca. Nació en una familia de curanderos y creció en el México rural. Aunque estudió medicina y se convirtió en cirujano, una experiencia cercana a la muerte lo llevó a redescubrir la sabiduría ancestral de su familia, dedicándose a compartir las enseñanzas toltecas con el mundo.
+                            <strong>Ismael Cala</strong> es periodista, escritor y conferenciante. A lo largo de su trayectoria profesional ha desarrollado contenidos relacionados con la comunicación, el liderazgo, el crecimiento personal y las relaciones interpersonales. En <strong>El Poder de Escuchar</strong>, comparte reflexiones sobre el papel que tiene la escucha en la manera en que nos comunicamos y nos relacionamos con los demás.
                         </p>
                         <p class="text-xs text-gray-500">
-                            **Fuente:** Adaptado de: #Spotify. <br></br>
+                            <strong>Fuente: </strong> Resumen elaborado a partir del audiolibro <strong>El Poder de Escuchar (abreviado)</strong>, de Ismael Cala, publicado por <strong>Fonolibro</strong> y disponible en Spotify. <br></br>
+
+                        </p>
+                        <p class="text-xs text-gray-500">
+                          <strong>Contenido original:</strong> <a href="https://open.spotify.com/album/06KkA6HwQFZvfhFy0H8SvU" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">https://open.spotify.com/embed/album/06KkA6HwQFZvfhFy0H8SvU</a>
                         </p>
                     </div>
                 </div>

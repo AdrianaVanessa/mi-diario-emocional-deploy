@@ -40,11 +40,10 @@ EMAIL_LOGO_URL = config("EMAIL_LOGO_URL")  # URL pública de tu logo
 WEBSITE_URL = config("WEBSITE_URL")
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://midiarioemocional-production.up.railway.app",
-    "https://*.railway.app",  # Permite cualquier subdominio de Railway
+    "https://mi-diario-emocional-deploy.vercel.app",
+    "https://mi-diario-emocional-api-f76026558651.herokuapp.com",
 ]
 # Application definition
-
 INSTALLED_APPS = [
     # Apps por defecto de Django
     "django.contrib.admin",
@@ -52,10 +51,12 @@ INSTALLED_APPS = [
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
+    # cloudinary_storage debe ir justo ARRIBA de staticfiles
     "django.contrib.staticfiles",
+    "cloudinary_storage",
+    "cloudinary",
     # Soporte de postgreSQL
     "django.contrib.postgres",
-    "storages",
     # Apps de Terceros (Django REST Framework y JWT)
     "rest_framework",
     "rest_framework_simplejwt",
@@ -156,35 +157,23 @@ USE_TZ = True
 STATIC_URL = "/static/"
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
-
 # --- ACTUALIZADO: Configuración de Archivos de Medios (MEDIA) ---
 
-# 1. Variables de DigitalOcean Spaces (leídas desde Railway via decouple)
-DO_SPACES_ACCESS_KEY = config("DO_SPACES_ACCESS_KEY")
-DO_SPACES_SECRET_KEY = config("DO_SPACES_SECRET_KEY")
-DO_SPACES_BUCKET_NAME = config("DO_SPACES_BUCKET_NAME")
-DO_SPACES_REGION = config("DO_SPACES_REGION")
-DO_SPACES_ENDPOINT = f"https://{DO_SPACES_REGION}.digitaloceanspaces.com"
-DO_SPACES_CUSTOM_DOMAIN = f"{DO_SPACES_BUCKET_NAME}.{DO_SPACES_REGION}.digitaloceanspaces.com"
+# 1. Credenciales de Cloudinary
+CLOUDINARY_STORAGE = {
+    "CLOUD_NAME": config("CLOUDINARY_CLOUD_NAME"),
+    "API_KEY": config("CLOUDINARY_API_KEY"),
+    "API_SECRET": config("CLOUDINARY_API_SECRET"),
+}
 
 # 2. Configuración de STORAGES (Django 4.2+)
 STORAGES = {
-    # --- MODIFICADO ---
-    "default": {  # Este es el 'default' para MEDIA (fotos de perfil)
-        "BACKEND": "storages.backends.s3boto3.S3Boto3Storage",
-        "OPTIONS": {
-            "access_key": DO_SPACES_ACCESS_KEY,
-            "secret_key": DO_SPACES_SECRET_KEY,
-            "bucket_name": DO_SPACES_BUCKET_NAME,
-            "endpoint_url": DO_SPACES_ENDPOINT,
-            "default_acl": "public-read",  # Para que las fotos se vean
-            "location": "media",  # Los archivos se guardarán en la carpeta /media/
-            "custom_domain": DO_SPACES_CUSTOM_DOMAIN,
-        },
+    "default": {
+        # Este es el 'default' para MEDIA. Apunta a Cloudinary.
+        "BACKEND": "cloudinary_storage.storage.MediaCloudinaryStorage",
     },
-    # ------------------
-    "staticfiles": {  # Este se queda igual, para WhiteNoise (CSS/JS del Admin)
-        "BACKEND": "whitenoise.storage.CompressedStaticFilesStorage",
+    "staticfiles": {
+        "BACKEND": "django.contrib.staticfiles.storage.StaticFilesStorage",
     },
 }
 
@@ -194,7 +183,7 @@ STATICFILES_DIRS = [
 
 # 3. URLs de Media
 # MEDIA_URL ahora apunta a nuestra carpeta 'media' en la nube
-MEDIA_URL = f"https://{DO_SPACES_CUSTOM_DOMAIN}/media/"
+MEDIA_URL = "/media/"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
@@ -228,9 +217,15 @@ SIMPLE_JWT = {
     "SIGNING_KEY": config("DJANGO_SECRET_KEY"),
 }
 
-EMAIL_BACKEND = config("EMAIL_BACKEND")
-DEFAULT_FROM_EMAIL = config("EMAIL_HOST_USER")
-ANYMAIL_BREVO_API_KEY = config("ANYMAIL_BREVO_API_KEY")
+EMAIL_BACKEND = config("EMAIL_BACKEND", default="django.core.mail.backends.smtp.EmailBackend")
+EMAIL_HOST = "smtp.gmail.com"
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False
+EMAIL_HOST_USER = config("EMAIL_HOST_USER", default="")
+EMAIL_HOST_PASSWORD = config("EMAIL_HOST_PASSWORD", default="")
+DEFAULT_FROM_EMAIL = config("DEFAULT_FROM_EMAIL", default=EMAIL_HOST_USER)
+SERVER_EMAIL = DEFAULT_FROM_EMAIL
 
 CORS_ALLOWED_ORIGINS = config("CORS_ALLOWED_ORIGINS", default="http://localhost:5173").split(",")
 CORS_ALLOW_CREDENTIALS = True
@@ -245,10 +240,6 @@ CORS_ALLOW_METHODS = [
 ]
 
 AUTH_USER_MODEL = "users.User"
-
-# Configuración de Archivos de Medios
-MEDIA_URL = f"https://{DO_SPACES_CUSTOM_DOMAIN}/media/"
-
 
 # LOGGING = {
 #     "version": 1,

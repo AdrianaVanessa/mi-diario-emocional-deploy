@@ -8,19 +8,27 @@
             <div class="bg-white rounded-2xl shadow-lg p-6 md:p-10 lg:p-16 max-w-4xl mx-auto my-6">
                 <div class="text-center mb-8">
                     <h1 class="text-3xl md:text-4xl font-bold text-gray-800 leading-tight mb-2">
-                        Ejercicio de Respiración para calmar la ansiedad.
+                        Ejercicio de respiración para calmar la ansiedad.
                     </h1>
                     <p class="text-lg text-gray-600 font-semibold">Por Glenda Yoga</p>
                     <p class="text-sm text-gray-500">16 de noviembre 2018</p>
                 </div>
 
-                <p class="text-xl md:text-2xl font-light text-gray-700 italic text-center leading-relaxed mb-8">
-                    “Toma un momento para calmar tu mente, regálate unos minutos, libera tensiones, duerme mejor.”
-                </p>
-
                 <div class="text-gray-700 leading-relaxed text-base md:text-lg">
                     <p class="mb-6 text-justify">
-                        ¿Sabías que tan sólo con respirar de manera adecuada puedes bajar la ansiedad y el estrés? En este podcast te guiaré en un ejercicio de respiración consciente que puedes hacer en cualquier momento del día para calmar tu mente y cuerpo. La respiración es una herramienta poderosa que todos tenemos a nuestro alcance, y aprender a utilizarla correctamente puede mejorar significativamente tu bienestar emocional y físico.
+                        Un ejercicio guiado de respiración consciente orientado a favorecer la relajación y dirigir la atención al momento presente.
+                    </p>
+
+                    <p class="mb-6 text-justify">
+                        En este episodio, Glenda Yoga guía un ejercicio de respiración consciente que puede realizarse durante unos minutos como una práctica de relajación. El objetivo es prestar atención al ritmo de la respiración y hacer una pausa frente a las preocupaciones o estímulos del día a día.
+                    </p>
+
+                    <p class="mb-6 text-justify">
+                        La respiración consciente es una práctica utilizada en ejercicios de meditación y mindfulness para dirigir la atención hacia el presente. Este episodio propone utilizarla como una herramienta sencilla para favorecer una sensación de calma y reconocer las sensaciones del cuerpo.
+                    </p>
+
+                    <p class="mb-6 text-justify">
+                        La actividad puede incorporarse como un ejercicio de bienestar y relajación, sin sustituir la atención de un profesional cuando existe malestar emocional persistente o intenso.
                     </p>
 
                 <div class="text-gray-700 leading-relaxed text-base md:text-lg">
@@ -45,10 +53,14 @@
                     <div class="mt-8 pt-4 border-t border-gray-200 text-gray-600 text-sm">
                         <h3 class="text-base font-bold text-gray-800 mb-2">Sobre la instructora</h3>
                         <p class="mb-2">
-                            **Glenda Yoga** Practicante de Yoga desde el 2012, estudios en India, practica la meditación Vipassana desde hace varios años.
+                            <strong>Glenda Yoga</strong> comparte contenido relacionado con yoga, meditación y prácticas de respiración consciente.
+
                         </p>
                         <p class="text-xs text-gray-500">
-                            **Fuente:** Adaptado de: #Spotify. <br></br>
+                            <strong>Fuente:</strong> Resumen elaborado a partir del episodio “Ejercicio de Respiración para calmar la ansiedad”, publicado por Glenda Yoga y disponible en Spotify.<br></br>
+                        </p>
+                        <p class="text-xs text-gray-500">
+                          <strong>Contenido original:</strong> <a href="https://open.spotify.com/embed/episode/5kVQKI7fpewVRVzEnOFxoM" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">https://open.spotify.com/embed/episode/5kVQKI7fpewVRVzEnOFxoM</a>
                         </p>
                     </div>
                 </div>

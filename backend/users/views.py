@@ -815,7 +815,7 @@ class ProfessionalActionsViewSet(viewsets.ReadOnlyModelViewSet):
         logo_data_uri = None
         try:
             # settings.BASE_DIR apunta a la carpeta 'backend'
-            logo_url = f"https://{settings.DO_SPACES_CUSTOM_DOMAIN}/logo.png"
+            logo_url = settings.EMAIL_LOGO_URL
             response = requests.get(logo_url)
             if response.status_code == 200:
                 image_bytes = response.content
