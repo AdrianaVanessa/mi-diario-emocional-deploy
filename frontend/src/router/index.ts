@@ -66,12 +66,6 @@ const routes = [
       meta: { requiresAuth: false, requiredRole: 'professional' } // Ruta pública
     },
     {
-      path: '/privacy-policy',
-      name: 'privacy-policy',
-      component: () => import('../modules/auth/views/PrivacyPolicyView.vue'), // Asumiendo este nombre de archivo
-      meta: { requiresAuth: false } // Es una ruta pública
-    },
-    {
       path: '/terms-and-conditions',
       name: 'terms-and-conditions',
       component: () => import('../modules/auth/views/TermsAndConditionsView.vue'), // Asumiendo este nombre de archivo
