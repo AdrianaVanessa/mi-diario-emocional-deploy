@@ -3,7 +3,7 @@ from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 from django.utils import timezone
 from django.utils.html import format_html
 
-from .models import EmailChangeRequest, PasswordReset, Patient, Professional, User
+from .models import EmailChangeRequest, PasswordReset, Patient, PreRegistration, Professional, User
 from .services import send_approval_email, send_rejection_email
 
 
@@ -248,6 +248,21 @@ class PatientAdmin(admin.ModelAdmin):
         if obj.professional:
             return obj.professional.user.get_full_name()
         return "No asignado"
+
+
+@admin.register(PreRegistration)
+class PreRegistrationAdmin(admin.ModelAdmin):
+    list_display = ("email", "role", "created_at", "verification_code_expires_at", "is_code_expired_status")
+    search_fields = ("email", "role")
+    list_filter = ("role", "created_at")
+    ordering = ("-created_at",)
+
+    # Método para mostrar si el código ya caducó directamente en la tabla
+    def is_code_expired_status(self, obj):
+        return obj.is_code_expired()
+
+    is_code_expired_status.boolean = True
+    is_code_expired_status.short_description = "¿Código Expirado?"
 
 
 # 3. Registrar los modelos
