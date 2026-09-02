@@ -1,5 +1,6 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
+from django.db import transaction
 from django.utils import timezone
 from django.utils.html import format_html
 
@@ -257,12 +258,42 @@ class PreRegistrationAdmin(admin.ModelAdmin):
     list_filter = ("role", "created_at")
     ordering = ("-created_at",)
 
-    # Método para mostrar si el código ya caducó directamente en la tabla
+    # 1. Registrar la nueva acción
+    actions = ["approve_preregistrations"]
+
     def is_code_expired_status(self, obj):
         return obj.is_code_expired()
 
     is_code_expired_status.boolean = True
     is_code_expired_status.short_description = "¿Código Expirado?"
+
+    # 2. Definir la lógica de aprobación manual
+    @admin.action(description="Aprobar manualmente y crear cuenta (Saltar correo)")
+    def approve_preregistrations(self, request, queryset):
+        success_count = 0
+        with transaction.atomic():
+            for prereg in queryset:
+                # Crear el usuario base
+                user = User(
+                    email=prereg.email,
+                    password=prereg.hashed_password,  # Ya está hasheada
+                    role=prereg.role,
+                    is_active=True,
+                    **prereg.user_data,
+                )
+                user.save()
+
+                # Crear el perfil correspondiente
+                if prereg.role == "patient":
+                    Patient.objects.create(user=user, **prereg.profile_data)
+                elif prereg.role == "professional":
+                    Professional.objects.create(user=user, **prereg.profile_data)
+
+                # Eliminar el registro temporal
+                prereg.delete()
+                success_count += 1
+
+        self.message_user(request, f"{success_count} cuentas creadas y verificadas exitosamente.")
 
 
 # 3. Registrar los modelos

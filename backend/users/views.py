@@ -546,6 +546,34 @@ class MyTokenObtainPairView(TokenObtainPairView):
 
     serializer_class = CustomTokenObtainPairSerializer
 
+    def post(self, request, *args, **kwargs):
+        email = request.data.get("email")
+        password = request.data.get("password")
+
+        # 1. Buscar si el correo está atascado en el pre-registro
+        pre_reg = PreRegistration.objects.filter(email=email).first()
+
+        if pre_reg:
+            # 2. Validar que la contraseña sea correcta (evita revelar si el correo existe a atacantes)
+            if check_password(password, pre_reg.hashed_password):
+                return Response(
+                    {
+                        "error": "pending_verification",
+                        "message": "Debes verificar tu correo antes de iniciar sesión.",
+                        "email": email,
+                        "role": pre_reg.role,
+                    },
+                    status=status.HTTP_403_FORBIDDEN,
+                )
+            else:
+                return Response(
+                    {"detail": "No se encontró ninguna cuenta activa con las credenciales dadas"},
+                    status=status.HTTP_401_UNAUTHORIZED,
+                )
+
+        # 3. Si no está en PreRegistration, continúa con el flujo de login normal
+        return super().post(request, *args, **kwargs)
+
 
 class ChangePasswordView(generics.GenericAPIView):
     """

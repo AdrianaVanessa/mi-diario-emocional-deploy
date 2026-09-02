@@ -16,22 +16,21 @@
           <p v-if="errorMessage" class="text-base text-red-500 text-center mb-4 font-semibold">
               {{ errorMessage }}
           </p>
-<div v-if="showRedirectButton" class="text-center">
-    <p class="text-gray-600 dark:text-gray-400 mb-6">
-        Haz clic en el botón de abajo para ir a la página de activación y solicitar un nuevo código.
-    </p>
-    <button
-        @click="redirectToVerification"
-        class="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors"
-    >
-        Activar mi Cuenta
-    </button>
-</div>
 
-<form v-else @submit.prevent="login">
+          <div v-if="showRedirectButton" class="text-center">
+            <p class="text-gray-600 dark:text-gray-400 mb-6">
+                Haz clic en el botón de abajo para ir a la página de activación y solicitar un nuevo código.
+            </p>
+            <button
+                @click="redirectToVerification"
+                class="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors"
+            >
+                Activar mi Cuenta
+            </button>
+          </div>
 
-    </form>
-          <form @submit.prevent="login">
+          <!-- Formulario corregido: el v-else ahora está directamente en el form real -->
+          <form v-else @submit.prevent="login">
             <div class="mb-6">
               <label
                 for="email"
@@ -62,27 +61,27 @@
                 Contraseña
               </label>
               <div class="relative">
-              <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                <IconLockSquareRounded class="h-6 w-6 mx-auto text-[#70BFE9] dark:text-gray-300" />
-              </div>
+                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                  <IconLockSquareRounded class="h-6 w-6 mx-auto text-[#70BFE9] dark:text-gray-300" />
+                </div>
 
-              <input
-                :type="showPassword ? 'text' : 'password'"
-                id="password"
-                v-model="password"
-                placeholder="Ingresa tu contraseña"
-                class="pl-10 pr-10 p-3 w-full border rounded-lg focus:ring-blue-500 focus:border-blue-500 bg-gray-50 dark:bg-gray-700 border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-400"
-                required
-              />
+                <input
+                  :type="showPassword ? 'text' : 'password'"
+                  id="password"
+                  v-model="password"
+                  placeholder="Ingresa tu contraseña"
+                  class="pl-10 pr-10 p-3 w-full border rounded-lg focus:ring-blue-500 focus:border-blue-500 bg-gray-50 dark:bg-gray-700 border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-400"
+                  required
+                />
 
-              <div
-                class="absolute inset-y-0 right-0 flex items-center pr-3 cursor-pointer"
-                @click="showPassword = !showPassword"
-              >
-                <IconEye v-if="!showPassword" class="h-5 w-5 text-gray-500 hover:text-[#70BFE9]" />
-                <IconEyeOff v-else class="h-5 w-5 text-gray-500 hover:text-[#70BFE9]" />
+                <div
+                  class="absolute inset-y-0 right-0 flex items-center pr-3 cursor-pointer"
+                  @click="showPassword = !showPassword"
+                >
+                  <IconEye v-if="!showPassword" class="h-5 w-5 text-gray-500 hover:text-[#70BFE9]" />
+                  <IconEyeOff v-else class="h-5 w-5 text-gray-500 hover:text-[#70BFE9]" />
+                </div>
               </div>
-            </div>
             </div>
 
             <button
@@ -133,7 +132,7 @@ const router = useRouter();
 const authStore = useAuthStore();
 const errorMessage = ref('');
 const showRedirectButton = ref(false);
-const inactiveUserRole = ref<string | null>(null); // Variable clave para guardar el rol
+const inactiveUserRole = ref<string | null>(null);
 const showPassword = ref(false);
 
 const redirectToVerification = () => {
@@ -144,15 +143,11 @@ const redirectToVerification = () => {
 
   const routePayload = {
     name: 'first-login',
-    params: { type: inactiveUserRole.value }, // <-- ¡Esto pasa el rol a la URL!
+    params: { type: inactiveUserRole.value },
     query: { email: email.value }
   };
 
-  // --- AÑADIDO PARA DEPURACIÓN ---
-  // Revisa en la consola que los parámetros de la ruta sean correctos antes de navegar.
   console.log("Redirigiendo a 'first-login' con los siguientes parámetros:", routePayload);
-  // ---------------------------------
-
   router.push(routePayload);
 };
 
@@ -162,35 +157,23 @@ const login = async () => {
   inactiveUserRole.value = null;
 
   try {
-    // La acción de login de la tienda devuelve la ruta a la que debemos ir.
     const redirectPath = await authStore.login({ email: email.value, password: password.value });
-
-    // Si el login es exitoso, redirigimos a la ruta que nos indicó la tienda.
     router.push(redirectPath);
 
   } catch (error: unknown) {
     let finalMessage = 'Credenciales inválidas. Verifique su correo y contraseña.';
 
-    // Esta lógica ahora es crucial para detectar el rol del usuario inactivo.
     if (isAxiosError(error) && error.response) {
       const errorData = error.response.data;
-
-      // --- AÑADIDO PARA DEPURACIÓN ---
-      // Revisa en la consola el objeto de error completo que envía el backend.
       console.log("Error recibido del backend:", errorData);
-      // ---------------------------------
 
-      // Verificamos si es el error de cuenta inactiva que viene del backend.
-      if (errorData.code === 'account_not_active') {
-        finalMessage = '¡Cuenta inactiva! Haz clic abajo para validarla.';
+      // Aquí capturamos tanto el nuevo error de PreRegistration como el de cuenta inactiva
+      if (errorData.error === 'pending_verification' || errorData.code === 'account_not_active') {
+        finalMessage = '¡Cuenta pendiente de verificación! Haz clic abajo para validarla.';
         showRedirectButton.value = true;
-        inactiveUserRole.value = errorData.role; // <-- Guardamos el rol desde la respuesta del error.
+        inactiveUserRole.value = errorData.role;
 
-        // --- AÑADIDO PARA DEPURACIÓN ---
-        // Confirma que el rol se guardó correctamente en nuestra variable local.
         console.log("Rol de usuario inactivo guardado:", inactiveUserRole.value);
-        // ---------------------------------
-
       } else if (errorData.detail) {
         finalMessage = errorData.detail;
       }
