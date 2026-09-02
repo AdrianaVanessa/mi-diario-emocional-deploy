@@ -163,20 +163,20 @@ const login = async () => {
   } catch (error: unknown) {
     let finalMessage = 'Credenciales inválidas. Verifique su correo y contraseña.';
 
-    if (isAxiosError(error) && error.response) {
-      const errorData = error.response.data;
-      console.log("Error recibido del backend:", errorData);
+    console.log("Error completo atrapado en LoginView:", error);
 
-      // Aquí capturamos tanto el nuevo error de PreRegistration como el de cuenta inactiva
-      if (errorData.error === 'pending_verification' || errorData.code === 'account_not_active') {
-        finalMessage = '¡Cuenta pendiente de verificación! Haz clic abajo para validarla.';
-        showRedirectButton.value = true;
-        inactiveUserRole.value = errorData.role;
+    // Casteamos el error de forma segura para evitar restricciones de TypeScript
+    const err = error as any;
+    const errorData = isAxiosError(err)
+      ? err.response?.data
+      : err?.response?.data || err;
 
-        console.log("Rol de usuario inactivo guardado:", inactiveUserRole.value);
-      } else if (errorData.detail) {
-        finalMessage = errorData.detail;
-      }
+    if (errorData?.error === 'pending_verification' || errorData?.code === 'account_not_active') {
+      finalMessage = '¡Cuenta pendiente de verificación! Haz clic abajo para validarla.';
+      showRedirectButton.value = true;
+      inactiveUserRole.value = errorData.role || 'patient';
+    } else if (errorData?.detail) {
+      finalMessage = errorData.detail;
     }
 
     errorMessage.value = finalMessage;
